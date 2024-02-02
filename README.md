@@ -1,4 +1,8 @@
-﻿# romaji_kana_cvt_rust
+﻿> [!NOTE]
+> このライブラリは[romaji_kana_cvt_rust](https://github.com/yumetodo/romaji_kana_cvt_rust)をベースにライブラリ用途に向けて改変を行ったものです。
+
+# romaji_kana_cvt_rust
+
 
 [![Build Status](https://travis-ci.org/yumetodo/romaji_kana_cvt_rust.svg?branch=master)](https://travis-ci.org/yumetodo/romaji_kana_cvt_rust)
 
