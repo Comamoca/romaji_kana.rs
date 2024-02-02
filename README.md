@@ -1,6 +1,30 @@
 ﻿> [!NOTE]
 > このライブラリは[romaji_kana_cvt_rust](https://github.com/yumetodo/romaji_kana_cvt_rust)をベースにライブラリ用途に向けて改変を行ったものです。
 
+使い方:
+
+```rust
+use romaji_kana_cvt_rust::cvt::RomajiCvt;
+
+fn main() {
+    let conv = RomajiCvt::new();
+    let result = conv
+        .from_romaji("waruitessakugakusatteiruwa".to_string())
+        .unwrap();
+
+    println!("{}", result); // => わるいてっさくがくさっているわ
+    println!("{}", conv.to_romaji(result).unwrap()); // => waruitessakugakusatteiruwa
+}
+```
+
+以下のメソッドがあります。
+
+- `from_romaji`
+ローマ字からひらがなへ変換します。
+
+- `to_romaji`
+メソッドでひらがなからローマ字へ変換します。
+
 # romaji_kana_cvt_rust
 
 
